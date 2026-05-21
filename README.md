@@ -32,6 +32,40 @@ L’objectif est simple : fournir un outil léger, rapide et compréhensible, ca
 
 ---
 
+## 📊 Roadmap
+
+### Version 1.0 — MVP
+- Scan ports locaux
+- Détection firewall
+- Analyse SSH
+- Score de sécurité
+
+### Version 2.0 — Avancée
+- Analyse HTTP/HTTPS
+- Détection CMS vulnérables
+- Analyse TLS/SSL
+- Export PDF du rapport
+
+### Version 3.0 — Pro
+- Interface graphique (PyQt6)
+- Version Docker
+- Version serveur (API REST)
+- Intégration dans TechNews365 OS Admin
+
+---
+
+## 📝 Licence
+
+Projet sous licence MIT — libre d’utilisation, modification et distribution.
+
+---
+
+## 👤 Auteur
+
+Projet créé par Jean (TechNews365), 2026.
+
+---
+
 ## 📦 Installation (à venir)
 
 Le projet sera installable via :

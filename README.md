@@ -1,4 +1,12 @@
-# cyberScan2026
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-Python_3.12-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Status-Development-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Security-CyberScan2026-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-lightgrey?style=for-the-badge">
+</p>
+
+CyberScan2026
 
 CyberScan 2026 est un assistant de cybersécurité conçu pour aider les administrateurs système et webmasters à détecter rapidement les failles de configuration les plus courantes : ports ouverts, absence de firewall, mauvaise configuration SSH, services exposés, etc.
 

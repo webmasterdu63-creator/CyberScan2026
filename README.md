@@ -63,6 +63,138 @@ Projet sous licence MIT — libre d’utilisation, modification et distribution.
 ## 👤 Auteur
 
 Projet créé par Jean (TechNews365), 2026.
+Qu’est‑ce que CyberScan2026 ?
+
+CyberScan2026 est un outil d’analyse de sécurité pour Linux.
+Il permet de :
+
+    analyser les ports ouverts
+
+    vérifier le firewall
+
+    analyser le système
+
+    scanner le réseau local
+
+    générer un rapport HTML complet
+
+🟦 1. Installation
+✔️ Prérequis
+
+    Linux (Ubuntu, Mint, TechNews365 OS…)
+
+    Python 3 installé
+
+✔️ Télécharger CyberScan2026
+
+Dans un terminal :
+Code
+
+git clone https://github.com/webmasterdu63-creator/CyberScan2026
+cd CyberScan2026
+
+🟩 2. Lancer CyberScan2026
+
+Dans le dossier du programme :
+Code
+
+python3 main.py
+
+Tu verras le menu :
+Code
+
+1 - Scan rapide
+2 - Scan complet
+3 - Audit système
+4 - Scan réseau local
+5 - Générer un rapport HTML
+0 - Quitter
+
+🟦 3. Fonctionnement des scans
+1 — Scan rapide
+
+Analyse les ports essentiels + firewall + SSH + kernel.
+2 — Scan complet
+
+Analyse profonde du système :
+
+    ports 1 à 65535
+
+    services
+
+    firewall
+
+    SSH
+
+    permissions dangereuses
+
+    paquets obsolètes
+
+    réseau local
+
+3 — Audit système
+
+Analyse de configuration :
+
+    kernel
+
+    firewall
+
+    SSH
+
+    services
+
+    SUID
+
+    sudoers
+
+4 — Scan réseau local
+
+Liste les appareils connectés :
+
+    IP
+
+    MAC
+
+    ports ouverts (22, 80, 443)
+
+5 — Rapport HTML
+
+Génère un fichier :
+Code
+
+rapport.html
+
+Avec :
+
+    scan rapide
+
+    scan complet
+
+    audit système
+
+    scan réseau
+
+    score de sécurité
+
+🟨 4. Où trouver le rapport HTML ?
+
+Dans le dossier CyberScan2026 :
+Code
+
+rapport.html
+
+Tu peux l’ouvrir avec :
+
+    Firefox
+
+    Chrome
+
+    Edge
+
+    Opera GX
+
+
 
 ---
 

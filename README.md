@@ -139,7 +139,7 @@ CyberScan2026 utilise uniquement :
 
 ## 👤 Auteur
 Développé par **Jean — TechNews365 OS**
-
+contact@technews365.fr
 ---
 
 ## 📌 Licence

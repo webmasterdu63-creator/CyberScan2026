@@ -37,13 +37,18 @@ def check_firewall():
     return "Aucun firewall actif"
 
 def scan_rapide():
+    output = []
+    output.append("=== Scan Rapide ===")
+
     print("===========================================")
     print("      CyberScan2026 — Scan Rapide")
     print("===========================================\n")
 
     # IP locale
     ip = subprocess.getoutput("hostname -I").split()[0]
-    print(f"Adresse IP locale : {ip}")
+    line = f"Adresse IP locale : {ip}"
+    print(line)
+    output.append(line)
 
     # Ports essentiels
     ports = {
@@ -55,20 +60,33 @@ def scan_rapide():
     }
 
     print("\nScan des ports essentiels :")
+    output.append("\nScan des ports essentiels :")
+
     for port, name in ports.items():
         status = "OUVERT" if scan_port(ip, port) else "fermé"
-        print(f" - Port {port} ({name}) : {status}")
+        line = f" - Port {port} ({name}) : {status}"
+        print(line)
+        output.append(line)
 
     # SSH
     ssh_status = subprocess.getoutput("systemctl is-active ssh")
-    print(f"\nService SSH : {ssh_status}")
+    line = f"\nService SSH : {ssh_status}"
+    print(line)
+    output.append(line)
 
     # Firewall
     fw = check_firewall()
-    print(f"Firewall : {fw}")
+    line = f"Firewall : {fw}"
+    print(line)
+    output.append(line)
 
     # Kernel
     kernel = platform.release()
-    print(f"Version du kernel : {kernel}")
+    line = f"Version du kernel : {kernel}"
+    print(line)
+    output.append(line)
 
     print("\nScan rapide terminé.")
+    output.append("\nScan rapide terminé.")
+
+    return "\n".join(output)

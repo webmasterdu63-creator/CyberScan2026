@@ -1,6 +1,8 @@
+
 from scan_rapide import scan_rapide
 from scan_complet import scan_complet
 from audit_systeme import audit_systeme
+from scan_reseau import scan_reseau
 
 def menu():
     while True:
@@ -10,7 +12,7 @@ def menu():
         print("1 - Scan rapide")
         print("2 - Scan complet")
         print("3 - Audit système")
-        print("4 - Scan réseau local (bientôt)")
+        print("4 - Scan réseau local")
         print("5 - Générer un rapport HTML (bientôt)")
         print("0 - Quitter\n")
 
@@ -22,6 +24,8 @@ def menu():
             scan_complet()
         elif choix == "3":
             audit_systeme()
+        elif choix == "4":
+            scan_reseau()
         elif choix == "0":
             print("Fermeture de CyberScan2026.")
             break
@@ -30,4 +34,3 @@ def menu():
 
 if __name__ == "__main__":
     menu()
-
